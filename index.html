@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Caixinha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #f5f0e8;
+      --green-dark: #2d5016;
+      --green-mid: #4a7c2f;
+      --green-light: #8db87a;
+      --green-pale: #e8f0e2;
+      --text: #2a2a2a;
+      --text-muted: #6b6b6b;
+      --border: #d4e2c8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--green-dark);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+
+    .logo-area {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--green-light);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+
+    .logo-name {
+      font-family: 'Lora', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--green-light);
+      font-style: italic;
+      letter-spacing: 0.02em;
+    }
+
+    .updated {
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.45);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .intro-card {
+      background: var(--green-pale);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 3rem;
+      font-size: 0.95rem;
+      color: var(--green-dark);
+      line-height: 1.7;
+    }
+
+    .intro-card strong {
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 2.75rem;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: var(--green-dark);
+      color: #fff;
+      border-radius: 50%;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 0.9rem;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0.9rem;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      color: var(--text);
+      padding: 0.35rem 0 0.35rem 1.6rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0.3rem;
+      top: 0.85rem;
+      width: 6px;
+      height: 6px;
+      background: var(--green-mid);
+      border-radius: 50%;
+    }
+
+    .highlight-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green-mid);
+      border-radius: 0 10px 10px 0;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    a {
+      color: var(--green-mid);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid var(--green-light);
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    a:hover {
+      color: var(--green-dark);
+      border-color: var(--green-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 2rem 1.25rem 4rem; }
+      header { padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo-icon">🏠</div>
+    <span class="logo-name">Caixinha</span>
+  </div>
+  <h1>Política de Privacidade</h1>
+  <p class="updated">Última atualização: maio de 2026</p>
+</header>
+
+<main>
+
+  <div class="intro-card">
+    <strong>Resumo simples:</strong> o Caixinha coleta apenas o necessário para o app funcionar. Não vendemos seus dados, não exibimos anúncios baseados em perfil e não compartilhamos suas informações com terceiros além dos serviços essenciais de funcionamento do app (Firebase e RevenueCat).
+  </div>
+
+  <section>
+    <h2><span class="num">1</span> Quem somos</h2>
+    <p>O Caixinha é um aplicativo de gestão financeira doméstica desenvolvido por <strong>Iago Mollon Esqueisaro</strong>, desenvolvedor independente. Para dúvidas ou solicitações relacionadas à privacidade, entre em contato pelo e-mail <a href="mailto:iagometech@gmail.com">iagometech@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Dados que coletamos</h2>
+    <p>O Caixinha coleta apenas os dados necessários para o funcionamento do aplicativo:</p>
+    <ul>
+      <li><strong>Nome e endereço de e-mail</strong> — obtidos no momento do cadastro ou via autenticação com Google.</li>
+      <li><strong>Foto de perfil</strong> — obtida via autenticação com Google, quando aplicável.</li>
+      <li><strong>Senha</strong> — quando o usuário opta pelo login com e-mail e senha. As senhas são gerenciadas exclusivamente pelo Firebase Authentication e nunca são armazenadas ou acessadas em texto simples por nós.</li>
+      <li><strong>Dados financeiros domésticos</strong> — despesas, categorias, valores e datas cadastrados pelo próprio usuário dentro do app.</li>
+      <li><strong>Dados de lares e membros</strong> — nome do lar e identificadores dos usuários membros, necessários para a funcionalidade de gestão compartilhada.</li>
+    </ul>
+    <div class="highlight-box">
+      Não coletamos dados de localização, contatos, câmera, microfone ou qualquer outro dado sensível do dispositivo.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Como usamos seus dados</h2>
+    <p>Os dados coletados são utilizados exclusivamente para:</p>
+    <ul>
+      <li>Autenticar o usuário e manter a sessão ativa no app.</li>
+      <li>Sincronizar despesas e lista de compras entre os membros do mesmo lar em tempo real.</li>
+      <li>Exibir informações financeiras do lar (dashboard, saldo mensal, histórico).</li>
+      <li>Gerenciar a assinatura premium do usuário.</li>
+    </ul>
+    <p>Não utilizamos seus dados para fins publicitários, análise de perfil comportamental ou qualquer finalidade além das descritas acima.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Compartilhamento de dados</h2>
+    <p>Seus dados são compartilhados apenas com os seguintes serviços essenciais para o funcionamento do app:</p>
+    <ul>
+      <li><strong>Google Firebase</strong> (Firestore e Authentication) — armazenamento de dados e autenticação. Política de privacidade: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></li>
+      <li><strong>RevenueCat</strong> — gerenciamento de assinaturas premium. Política de privacidade: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></li>
+    </ul>
+    <p>Não vendemos, alugamos ou compartilhamos seus dados com terceiros para fins comerciais ou publicitários.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Dados compartilhados dentro do lar</h2>
+    <p>O Caixinha é um app colaborativo. Ao criar ou participar de um lar, as despesas que você lançar, os itens que adicionar à lista de compras e seu nome serão visíveis para os demais membros do mesmo lar. Esse compartilhamento é intencional e essencial para o funcionamento do app.</p>
+    <p>Dados de lares diferentes são completamente isolados entre si.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Retenção de dados</h2>
+    <p>Seus dados são mantidos enquanto sua conta estiver ativa. Ao excluir sua conta, todos os seus dados pessoais são removidos permanentemente, incluindo:</p>
+    <ul>
+      <li>Lares dos quais você é o único membro (excluídos integralmente).</li>
+      <li>Lares com outros membros: a propriedade é transferida automaticamente para outro membro antes da exclusão.</li>
+      <li>Todos os demais dados associados à sua conta (despesas, preferências, dados de assinatura).</li>
+    </ul>
+    <p>A exclusão pode ser realizada diretamente na tela de perfil do aplicativo.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Segurança</h2>
+    <p>Todos os dados transmitidos entre o app e nossos servidores são criptografados em trânsito via HTTPS/TLS. As senhas são gerenciadas pelo Firebase Authentication e nunca ficam acessíveis em texto simples. O acesso aos dados do Firestore é protegido por regras de segurança que garantem que cada usuário acesse apenas os dados dos lares dos quais faz parte.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Seus direitos</h2>
+    <p>Você tem direito a:</p>
+    <ul>
+      <li>Acessar os dados que o app armazena sobre você.</li>
+      <li>Corrigir dados incorretos diretamente no app.</li>
+      <li>Excluir sua conta e todos os dados associados a qualquer momento, pela tela de perfil.</li>
+      <li>Solicitar informações sobre o tratamento dos seus dados entrando em contato pelo e-mail abaixo.</li>
+    </ul>
+    <p>Esta política está em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span> Menores de idade</h2>
+    <p>O Caixinha não é direcionado a menores de 13 anos e não coleta intencionalmente dados de crianças. Caso identifiquemos o cadastro de um menor, a conta será removida.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span> Alterações nesta política</h2>
+    <p>Esta política pode ser atualizada ocasionalmente. Em caso de alterações relevantes, notificaremos os usuários dentro do próprio aplicativo. A data da última atualização sempre será exibida no topo desta página.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">11</span> Contato</h2>
+    <p>Para dúvidas, solicitações ou reclamações relacionadas à privacidade dos seus dados, entre em contato:</p>
+    <p>📧 <a href="mailto:iagometech@gmail.com">iagometech@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Iago Mollon Esqueisaro · Caixinha · Todos os direitos reservados
+</footer>
+
+</body>
+</html>
