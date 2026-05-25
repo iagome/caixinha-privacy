@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excluir Conta — Caixinha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #f5f0e8;
+      --green-dark: #2d5016;
+      --green-mid: #4a7c2f;
+      --green-light: #8db87a;
+      --green-pale: #e8f0e2;
+      --red-pale: #fdecea;
+      --red: #c0392b;
+      --text: #2a2a2a;
+      --text-muted: #6b6b6b;
+      --border: #d4e2c8;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--green-dark);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+
+    .logo-area {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--green-light);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+
+    .logo-name {
+      font-family: 'Lora', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--green-light);
+      font-style: italic;
+      letter-spacing: 0.02em;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .warning-card {
+      background: var(--red-pale);
+      border: 1px solid #f5c6c2;
+      border-left: 4px solid var(--red);
+      border-radius: 0 12px 12px 0;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+      color: #7b2020;
+      line-height: 1.7;
+    }
+
+    .warning-card strong {
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--green-dark);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1.5px solid var(--border);
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-bottom: 0.9rem;
+    }
+
+    ol {
+      padding-left: 0;
+      list-style: none;
+      counter-reset: steps;
+      margin-bottom: 0.9rem;
+    }
+
+    ol li {
+      font-size: 0.95rem;
+      color: var(--text);
+      padding: 0.5rem 0 0.5rem 2.5rem;
+      position: relative;
+      counter-increment: steps;
+    }
+
+    ol li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 0.55rem;
+      width: 22px;
+      height: 22px;
+      background: var(--green-dark);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.72rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 0.9rem;
+    }
+
+    ul li {
+      font-size: 0.95rem;
+      color: var(--text);
+      padding: 0.35rem 0 0.35rem 1.6rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0.3rem;
+      top: 0.85rem;
+      width: 6px;
+      height: 6px;
+      background: var(--green-mid);
+      border-radius: 50%;
+    }
+
+    .highlight-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green-mid);
+      border-radius: 0 10px 10px 0;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    a {
+      color: var(--green-mid);
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid var(--green-light);
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    a:hover {
+      color: var(--green-dark);
+      border-color: var(--green-dark);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-bottom: none;
+      margin-bottom: 2rem;
+    }
+
+    .back-link:hover {
+      color: var(--green-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 2rem 1.25rem 4rem; }
+      header { padding: 2rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-area">
+    <div class="logo-icon">🏠</div>
+    <span class="logo-name">Caixinha</span>
+  </div>
+  <h1>Exclusão de Conta</h1>
+</header>
+
+<main>
+
+  <a href="./index.html" class="back-link">← Voltar para a Política de Privacidade</a>
+
+  <div class="warning-card">
+    <strong>Atenção:</strong> a exclusão de conta é permanente e irreversível. Todos os seus dados serão removidos e não poderão ser recuperados.
+  </div>
+
+  <section>
+    <h2>Como excluir sua conta</h2>
+    <p>A exclusão da conta é feita diretamente dentro do aplicativo Caixinha, sem necessidade de entrar em contato com o suporte. Siga os passos abaixo:</p>
+    <ol>
+      <li>Abra o aplicativo Caixinha no seu celular</li>
+      <li>Acesse a tela de <strong>Perfil</strong> pelo menu de navegação</li>
+      <li>Role até o final da tela e toque em <strong>"Excluir conta"</strong></li>
+      <li>Confirme a exclusão na tela de confirmação</li>
+    </ol>
+    <p>A exclusão é processada imediatamente após a confirmação.</p>
+  </section>
+
+  <section>
+    <h2>O que acontece com seus dados</h2>
+    <p>Ao excluir sua conta, o seguinte ocorre automaticamente:</p>
+    <ul>
+      <li><strong>Lares dos quais você é o único membro</strong> — excluídos permanentemente, incluindo todas as despesas e listas de compras associadas.</li>
+      <li><strong>Lares com outros membros</strong> — caso você seja o proprietário, a propriedade é transferida automaticamente para outro membro antes da exclusão. O lar e seus dados permanecem para os demais membros.</li>
+      <li><strong>Dados da conta</strong> — nome, e-mail, foto de perfil e todos os dados pessoais são removidos permanentemente.</li>
+      <li><strong>Assinatura premium</strong> — o acesso premium é encerrado. Cancelamentos e reembolsos são gerenciados pela Google Play Store conforme sua política de assinaturas.</li>
+    </ul>
+    <div class="highlight-box">
+      Nenhum dado pessoal é retido após a exclusão da conta. A remoção é imediata e completa.
+    </div>
+  </section>
+
+  <section>
+    <h2>Precisa de ajuda?</h2>
+    <p>Se tiver dificuldades para excluir sua conta dentro do app ou quiser solicitar a exclusão por e-mail, entre em contato:</p>
+    <p>📧 <a href="mailto:iagometech@gmail.com">iagometech@gmail.com</a></p>
+    <p>Responderemos em até 5 dias úteis e processaremos a exclusão manualmente mediante confirmação de identidade.</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Iago Mollon Esqueisaro · Caixinha · <a href="./index.html">Política de Privacidade</a>
+</footer>
+
+</body>
+</html>
